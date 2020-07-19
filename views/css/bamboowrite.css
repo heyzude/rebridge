@@ -1,0 +1,13 @@
+.box {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+select {
+    background: #fff;
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #ffcf56;
+    border-radius: 10px;
+}

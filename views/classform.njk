@@ -1,0 +1,134 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+  <link rel="stylesheet" href="/css/classform.css" />
+{% endblock %}
+
+{% block content %}
+  <form method="post" action="/class">
+
+    <div class="image__container">
+      <label for="profile-photo" class="profile__image">프로필 사진</label>
+      <input type="file" hidden id="profile-photo" />
+      <input type="text" hidden name="profile-photo" required>
+      <label for="class-photo" class="class__image">클래스 대표사진</label>
+      <input type="file" hidden id="class-photo" />
+      <input type="text" hidden name="class-photo" required>
+    </div>
+
+    <div class="elements">
+      <div>
+        <label for="portfolio">포트폴리오 (학력, 자격증, 경력)</label>
+      </div>
+      <div>
+        <textarea id="portfolio" name="portfolio" required></textarea>
+      </div>
+    </div>
+
+    <div class="elements">
+      <div>
+        <label for="evidence">증빙자료 첨부</label>
+      </div>
+      <div class="evidence__list">
+
+        <div class="number">1.</div>
+        <div class="title">졸업장.jpg</div>
+
+        <div class="contain__evidencebutton">
+          <button class="evidence__button">수정</button>
+          <button class="evidence__button">삭제</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="elements">
+      <div>
+        <label for="introduction">수업소개</label>
+      </div>
+      <div>
+        <textarea id="introduction" name="introduction" required></textarea>
+      </div>
+    </div>
+
+    <div class="elements">
+      <div>
+        <label for="curriculum">수업 커리큘럼</label>
+      </div>
+      <div>
+        <textarea id="curriculum" name="curriculum" required></textarea>
+      </div>
+    </div>
+
+    <div class="elements">
+      <div>
+        <label for="schedule">수업 시간, 날짜</label>
+      </div>
+      <div>
+        <textarea id="schedule" name="schedule" required></textarea>
+      </div>
+    </div>
+
+    <div class="elements">
+            <span>
+                <span>서비스 이용약관</span>
+                <input type="checkbox" required="required">
+                <span>동의</span>
+            </span>
+    </div>
+
+    <div>
+
+            <span>
+                <span>개인정보 처리방침</span>
+                <input type="checkbox" required="required">
+                <span>동의</span>
+            </span>
+
+    </div>
+
+    <button class="button" type="submit">제출</button>
+  </form>
+{% endblock %}
+
+{% block script %}
+  <script>
+    document.getElementById('profile-photo').onchange = function(e) {
+      var formdata = new FormData();
+      formdata.append('photo', e.target.files[0]);
+      var fileReader = new FileReader();
+      fileReader.readAsDataURL(e.target.files[0]);
+      fileReader.onload = function(e) {
+        document.querySelector('label[for=profile-photo]').style.display = 'inline-block';
+        document.querySelector('label[for=profile-photo]').innerHTML = '';
+        document.querySelector('label[for=profile-photo]').style.backgroundImage = 'url(\'' + e.target.result + '\')';
+      };
+      var xhr = new XMLHttpRequest();
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          document.querySelector('[name=profile-photo]').value = xhr.responseText;
+        }
+      };
+      xhr.open('POST', '/class/profile-photo');
+      xhr.send(formdata);
+    };
+    document.getElementById('class-photo').onchange = function(e) {
+      var formdata = new FormData();
+      formdata.append('photo', e.target.files[0]);
+      var fileReader = new FileReader();
+      fileReader.readAsDataURL(e.target.files[0]);
+      fileReader.onload = function(e) {
+        document.querySelector('label[for=class-photo]').style.display = 'inline-block';
+        document.querySelector('label[for=class-photo]').innerHTML = '';
+        document.querySelector('label[for=class-photo]').style.backgroundImage = 'url(\'' + e.target.result + '\')';
+      };
+      var xhr = new XMLHttpRequest();
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          document.querySelector('[name=class-photo]').value = xhr.responseText;
+        }
+      };
+      xhr.open('POST', '/class/class-photo');
+      xhr.send(formdata);
+    };
+  </script>
+{% endblock %}

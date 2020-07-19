@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rebridge-210303",
+  "private_key_id": "8affde692cf211105e1cf143bd56c7a016c4f277",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDmwgIKXrfqtP5V\nkBaVZMyTskzghS3TixPT9mjANGVuZAMlL0hF3MVieHOfiAvqjj0ucnmYbjgRQ5c8\nFVaq2uOA9UJEOKd75XofBClSBDMLC+SwzeQefF+hBeTKyEI8FYQYJVsoQQqKwbOI\nHP9rQMpaQA4mq8OPe0kdn+5st+YvF4grTL7DVy0W15tR83bt9cPSNKC8dF9suIbG\ntJHM2LNF69o81UBmNHmSYj+KyrpjFLYqoPFfWlFLZ+IuT3mKDZjFyX2/Xa2U2hqs\nyV9+FKo9pTbz2oUdya7y9dG+ktglwA9BANAMRX17/MLeFCxwHtaIC5rE2KrRTw8G\nhHx9mJnbAgMBAAECggEANcrlKeCxtAuUPIL12MaiMA4BANfa+nTx3tgSzDeKq6Sx\n3QG8MdkIxG862OYgjQGyfnjeIqwS8udUQoPg67xSC5Zg58FjPa0dfkx8i2uCMKGJ\norOkaXzp2AIlNyZe1l3XqL9QlD4xRG5qOSE1Y527bjV/dwFUecauITNOo9Zs2O4M\nhYkQmxIbNEcJtCwoPwpUrYEy5VJEtHcrXOn+Xpde9LFwb6UKiNevefaVZP0Arlmx\ntRvQt4HF5m8IYqgAmGSsNtRb1ZmRWYYgkcCyxNxlPQDWV2EZz7LagrTQule86Yu7\nyPMUB4p1LMJWTzJFox5zyQQuHlLfyaVHQlltXGbrhQKBgQD7K5mfszcrWY/DTZ2G\nzqsJb6ZjecY1fYiyoTJT/bQQtMC0Od8LYNrsMz7cUUUem1tqX3Vv96t3v2B8Vgo5\nGogKTzqij8dh7hxdXoWwFY7ZN6DJhf7XMU/XJAv7MI2lytYRqsJT0LLaStdSZMrE\n2UFFjZe/i0s7aTTIhb7SYiauLwKBgQDrMe0lto6c6pyblJrEcVKooCwFkcCWWru1\nNloDJqi+amMSWsaDvuSI+pjjQt2Puej3wyJ+So9h4DLiaSRlYsYVqgzQNgGsT4Xp\nvxUigkQ++V1f3GlFIYIPAxi7lQ8FLKV72GbV8AJCJoW2sSkVdVV6iIZJUw5mqMpo\nBciPUxSwFQKBgBt/h38jeMvHL2Ubbz6eC72pupazc07R4pBj84WchgU6NMrGdzPg\ns7ceWSh3wVB7g8OeldXfUKd4jVCvfskHrZMrX2kCwrpm/jX+rjY79fq0C2dkwyS+\nIlaUfLdQdoGLNmqSvlm8xIf/n5lGrahlfK7ntJBk6KSlfQDjG6Qe2MtDAoGBAKAK\nKhe2gJaQIp7PYPz5K8jorOvhQQ5OkVn+sQNh5AMmO2H6+Qge9j2rYCuMjV1GoRsu\n4iLTs3tjZtyftQ90RdvqCawIg9zvg+0JhGUmBTBg2MPpJIzQ/0Id1k+WX1EjDzwV\nhexf0/mVYvls1crvO4oUqmPsq2j5xDlCbjXwz6v9AoGBAM+SsH6uHnYDypG1xXBx\nqpG/dMQKLKBrucFEZFb1hOLjy82OEEhHQ+1Rch7XhTPqMM2noLAw9B9MFxpiqP4/\n2lzdVsg6knOR7fE1bS+IDFs4VwllzCUcNyLXc5HfNlcYOL82ykkk9adf74peeElz\nWXMOTtPUYjdEKEVirrYdFDtO\n-----END PRIVATE KEY-----\n",
+  "client_email": "rebridge-210303@appspot.gserviceaccount.com",
+  "client_id": "111704095195282260993",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rebridge-210303%40appspot.gserviceaccount.com"
+}

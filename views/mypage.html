@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../images/tempLogo.jpg">
+
+  <title>Re:Bridge</title>
+
+
+  <style>
+
+    * { border: 1px solid black; }
+
+    body {
+      padding-top: 1.5rem;
+      padding-bottom: 40px;
+      background-color: #eee;
+    }
+
+    .center-align-container, .center-align-container>div {
+      margin: auto;
+    }
+
+    .center-align-container {
+      width: 380px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .inputbox {
+      width: 100%;
+      height: 2rem;
+    }
+
+
+    form.personal-info>div{
+      margin-top: 1em;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .col-profile-left {
+      float: left;
+      width: 30%;
+      box-sizing: border-box;
+
+    }
+
+    .col-profile-right {
+      float: left;
+      width: 70%;
+      box-sizing: border-box;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .profile-photo {
+      position: relative;
+      overflow: hidden;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50% !important;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    .friend-profile-photo {
+      position: relative;
+      overflow: hidden;
+      width: 4rem;
+      height: 4rem;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="container center-align-container" >
+
+  <div class="col text-center ">
+    <h1>리:브릿지</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-profile-left">
+      <img class="profile-photo" src="../images/sample3.jpeg" alt="프로필 사진">
+    </div>
+
+    <div class="col-profile-right">
+      <h5 >사용자 닉네임</h5>
+      <span >20, 50대를 이어주고픈 아름다운 사람</span>
+    </div>
+  </div>
+
+  <div>
+    <div style="overflow:auto;">
+      <button type="button" style="float:right;">수정</button>
+    </div>
+  </div>
+
+  <div class="attraction-friend">
+    <div>
+      <div style="float:left; width:20%;">
+        <h3 >관심친구</h3>
+      </div>
+
+      <div style="float:right;width:20%; ">
+        <button>친구관리</button>
+      </div>
+
+
+    </div>
+
+    <div class="row" style="clear: both;">
+      <div class="col-profile-left">
+        <img class="friend-profile-photo" src="../images/sample2.jpeg" alt="친구 프로필 사진">
+      </div>
+      <div class="col-profile-right">
+        <img class
+      </div>
+    </div>
+  </div>
+
+  <div class="attraction-friend">
+    <div class="row mt-5 mb-3">
+      <div class="col-5">
+        <h4>관심친구</h4>
+      </div>
+      <div class="col-3 offset-4 pl-2">
+        <button type="button" class="btn btn-sm btn-outline-primary text-center">친구관리</button>
+      </div>
+    </div>
+
+    <div class="friends-list">
+      <div class="media mb-2">
+        <img class="mr-3 friend-profile-photo" src="images/sample2.jpg" alt="관심친구 프로필사진">
+        <div class="media-body">
+          <h5 class="mt-0">김창주</h5>
+          친한 친구
+
+        </div>
+      </div>
+
+      <div class="media mb-2">
+        <img class="mr-3 friend-profile-photo" src="images/sample2.jpg" alt="관심친구 프로필사진">
+        <div class="media-body">
+          <h5 class="mt-0">김창주</h5>
+          친한 친구
+
+        </div>
+      </div>
+
+      <div class="media mb-2">
+        <img class="mr-3 friend-profile-photo" src="images/sample2.jpg" alt="관심친구 프로필사진">
+        <div class="media-body">
+          <h5 class="mt-0">김창주</h5>
+          친한 친구
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="my-posts">
+    <div class="row mt-5">
+      <div class="col-3">
+        <span>공유게시물</span>
+      </div>
+      <div class="col-3 offset-6 pl-2">
+        <button type="button" class="btn btn-sm btn-outline-primary text-center">게시물찾기</button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</div> <!-- /container -->
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!--
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script> -->
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!-- <script src="js/holder.min.js"></script>  -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

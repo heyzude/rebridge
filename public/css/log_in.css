@@ -1,0 +1,84 @@
+
+.login-container {
+    display: inline-block;
+    padding-top: 50px;
+    background: white;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#login-form .input-box {
+    position: relative;
+    background-color: #ddd;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#login-form .input-box .i-wrap {
+    display: inline-block;
+    padding-left: 5px;
+    line-height: 30px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+#login-form .input-box input {
+    background-color: #ddd;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    display: inline-block;
+    padding-left: 15%;
+}
+
+#login-form .buttonbox {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+#login-form .button_login {
+    background: #fafafa;
+    text-align: center;
+    border: 1px solid orange;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+
+#login-error-message {
+    margin-top: 20px;
+}
+
+#check-wrap {
+    margin-left: 25px;
+}
+
+#button-wrap {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#button-wrap a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+#button-wrap .signupbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+    background: #fafafa;
+    width: 100%;
+    height: 50px;
+    border: 1px solid orange;
+    font-size: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+}

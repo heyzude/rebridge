@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/tempLogo.jpg">
+
+    <title>Re:Bridge - Log In</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col text-center ">
+            <h1>리:브릿지</h1>
+        </div>
+    </div>
+
+    <form class="form-onlymobile">
+
+        <div class="form-group">
+            <label for="userID" class="col-form-label">아이디 <br> (한번 설정된 아이디는 변경이 불가합니다)</label>
+            <input type="text" class="form-control" id="userID" placeholder="유저의 아이디" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="userPassword" class="col-form-label">비밀번호 변경</label>
+            <input type="password" class="form-control" id="userPassword" placeholder="새로운 비밀번호를 입력해주세요" required>
+        </div>
+
+        <div class="form-group">
+            <label for="userPasswordValidation" class="col-form-label">비밀번호 확인</label>
+            <input type="password" class="form-control" id="userPasswordValidation" placeholder="비밀번호 확인" required>
+        </div>
+
+        <!--닉네임은 없다고 해서 안 넣었습니다-->
+
+
+
+        <div class="form-group">
+            <label for="userPhoneNumber" class="col-form-label">전화번호</label>
+            <input type="text" class="form-control" placeholder="010-1234-5678" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" id="userPhoneNumber" required>
+
+        </div>
+
+        <label for="userBirthday">생년월일</label>
+        <div class="form-row mb-5" id="userBirthday">
+
+            <div class="input-group col-5">
+                <input type="number" class="form-control" id="userBirthdayYear" placeholder="4자리 연도" value=1960>
+                <span class="input-group-addon addon">년</span>
+            </div>
+
+
+            <div class="input-group col">
+                <input type="number" class="form-control" id="userBirthdayMonth">
+                <span class="input-group-addon addon">월</span>
+            </div>
+
+
+
+            <div class="input-group col">
+                <input type="number" class="form-control" id="userBirthdayDay">
+                <span class="input-group-addon addon">일</span>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="col-6">
+                <button class="btn btn-lg btn-outline-primary button-in-signin-page text-center" style="font-size:1em;" type="submit">수정완료</button>
+            </div>
+            <div class="col-6">
+                <button class="btn btn-lg btn-outline-danger button-in-signin-page text-center" style="font-size:1em;" type="button">회원탈퇴</button>
+            </div>
+        </div>
+
+    </form>
+
+</div> <!-- /container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')</script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<!-- <script src="js/holder.min.js"></script>  -->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
+
+

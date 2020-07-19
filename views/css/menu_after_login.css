@@ -1,0 +1,147 @@
+#menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mypage__column1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+#menu .mypage__column2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#menu .menu__column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% / 3 * 2);
+  height: 50px;
+  background-color: white;
+  font-size: 1rem;
+}
+
+#menu .menu__column:last-child {
+}
+
+#menu .menu__link {
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  background-color: #ffeabb;
+  border-radius: 10px;
+}
+
+#menu .mypage__link {
+  padding: 10px;
+  margin: 2px;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  background-color: #fac53b;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#menu .menu__link__login {
+  padding: 10px;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  background-color: #fac53b;
+  border-radius: 10px;
+}
+
+.mypage__row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mypage__row .mypage__row-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.div__row {
+  display: flex;
+  width: 100%;
+}
+
+.div__column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 150px;
+  background-color: white;
+}
+
+.div__column:first-child {
+  width: 30%;
+}
+
+.div__column:last-child {
+  width: 70%;
+}
+.profile__pic {
+    background-color: darkcyan;
+    margin: 15px;
+    display: flex;
+    padding: 2px;
+    padding-left: 10px;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 50%;
+}
+
+.nickname {
+  margin: 0px 2px 10px 10px;
+}
+.button {
+  margin: 10px;
+}
+
+.button:last-child {
+    margin-top: 0px;
+  }
+
+.button .button__link {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  background-color: #ffcf56;
+  border-radius: 10px;
+}

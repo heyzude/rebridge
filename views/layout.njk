@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" />
+  {% block style %}{% endblock %}
+  <style>
+    body {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+<header id="header">
+  <div class="container">
+    <div class="header__column">
+        <a href="/menu" class="header__link">
+            메뉴
+        </a>
+    </div>
+    <div class="header__column">
+        {{ title }}
+    </div>
+    <div class="header__column">
+        <a href="/" class="header__link">
+            리:브릿지
+        </a>
+    </div>
+  </div>
+</header>
+{% block content %}{% endblock %}
+{% block script %}{% endblock %}
+  </div>
+</div>
+</body>
+</html>

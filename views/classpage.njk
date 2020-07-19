@@ -1,0 +1,47 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+  <link rel="stylesheet" href="/css/classpage.css" />
+{% endblock %}
+
+
+{% block content %}
+  <div class="classpage__image">
+    <img class="classpage__image" src="/images/classimage.jpg" alt="클래스 배경사진" style="width: 100%">
+  </div>
+
+  <div class="classpage__info">
+    <div class="tutorimage__container">
+      <img src="/images/JYP.jpg" alt="튜터 사진" class="tutorimage">
+    </div>
+    <div class="tutor__info">
+      <div class="subjecttitle">
+        박탁구의 탁구교실
+      </div>
+      <div class="subtitle">
+        "기초부터 찬찬히"
+      </div>
+      <div class="name">
+        이름: 박재윤
+      </div>
+      <div class="grading">
+        평점: 4.5 (38)
+      </div>
+      <div class="classpage__button__container">
+        <button class="classpage__button">신청하기</button>
+        <button class="classpage__button">문의하기</button>
+      </div>
+    </div>
+  </div>
+
+  <nav id="navbar">
+    <a class="navbar__menu" href="classpage.html">수업소개</a>
+    <a class="navbar__menu" href="classpage_curriculum.html">커리큘럼</a>
+    <a class="navbar__menu" href="classpage_placetime.html">장소/시간</a>
+    <a class="navbar__menu" href="classpage_review.html">리뷰</a>
+  </nav>
+
+  <div class="classpage__contentbox">
+    본 수업은 ~~~~~~
+  </div>
+{% endblock %}

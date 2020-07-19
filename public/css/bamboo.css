@@ -1,0 +1,164 @@
+.write {
+  border: 0;
+  background: #ff8e0c;
+  height: 20px;
+  font-size: 0.8rem;
+  width: 65px;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0.35rem 0.3rem 0 0;
+}
+
+.contain__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.reply__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-size: 0.9rem;
+  background: #ffeabb;
+  border-radius: 10px;
+}
+
+.postinfo__column__70 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 70%;
+}
+
+.postinfo__column__30 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.postinfo__column {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.contain__row {
+  display: flex;
+}
+
+.contain__reply {
+  display: flex;
+}
+
+.response {
+  display: flex;
+  justify-content: space-around;
+}
+
+.response__box {
+  display: flex;
+  justify-content: center;
+  width: calc(100% / 3);
+  padding: 10px;
+  background: #ffeabb;
+}
+
+.contain__bamboobutton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.postinfo {
+  display: flex;
+  margin-top: 20px;
+  border-top: 1px solid #ff8e0c;
+}
+
+.hash {
+  display: flex;
+}
+
+.column__content {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.reply__nickname {
+  padding: 2px;
+}
+
+.reply__comment {
+  padding: 2px;
+}
+
+.howmany__hits {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.nth__bamboo {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.upload__date {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.row__content {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.reply__profilepic {
+  padding: 2px;
+  padding-left: 10px;
+  display: flex;
+  margin: 5px;
+  background: black;
+  width: 10%;
+  height: 0;
+  padding-bottom: 10%;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.hash__content {
+  padding: 2px;
+  padding-left: 10px;
+}
+
+i {
+  padding-right: 3px;
+}
+
+.bamboo__button {
+  background: #fafafa;
+  height: 30px;
+  width: 40%;
+  border: 1px solid orange;
+  font-size: 14px;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.bamboo__report {
+  background: #fafafa;
+  height: 30px;
+  width: 60%;
+  border: 1px solid orange;
+  font-size: 14px;
+  border-radius: 1rem 1rem 1rem 1rem;
+}
+
+.content__box {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+}

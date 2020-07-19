@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <style>
+        input[type="text"] {
+            margin-top: 2px;
+            width: 50%;
+            height: 30px;
+            outline: none;
+            border: none;
+        }
+
+        input[type="password"] {
+            margin-top: 2px;
+            margin-left: 1px;
+            width: 50%;
+            height: 30px;
+            outline: none;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header__column">
+            <a href="#" class="header__link">
+                메뉴
+            </a>
+        </div>
+        <div class="header__column">
+            <a href="#" class="header__link">
+                <img class="header__logo" src="#" alt="리:브릿지 로고">
+            </a>
+        </div>
+        <div class="header__column">
+            <a href="#" class="header__link">
+                리:브릿지
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="idbox">
+            <i style="background: white; padding:3px;" class="fas fa-user-circle"></i>
+            <input id="id" name="id" type="text" autocomplete="on" autofocus required placeholder="아이디">
+        </div>
+
+        <div class="passwordbox">
+            <i style="background: white; padding:3px;" class="fas fa-lock"></i>
+            <input id="password" name="password" type="password" autocomplete="on" required placeholder="비밀번호">
+        </div>
+
+        <div class="buttonbox">
+            <button class="button_login">로그인</button>
+            <button class="button_login">아이디, 비밀번호 찾기</button>
+        </div>
+
+        <div class="check">
+            <span>
+                <input type="checkbox" required>
+                <span>로그인 상태 유지</span>
+            </span>
+        </div>
+
+        <div class="check">
+            <span>
+                <input type="checkbox" required>
+                <span>아이디 저장</span>
+            </span>
+        </div>
+
+    </div>
+
+    <div style="margin-left: 17%;">
+
+        <button class="signupbutton">네이버 계정으로 회원가입</button>
+        <button class="signupbutton">카카오 계정으로 회원가입</button>
+        <button class="signupbutton">회원가입</button>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

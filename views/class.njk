@@ -1,0 +1,106 @@
+{% extends "layout.njk" %}
+
+{% block style %}
+  <link rel="stylesheet" href="/css/classmain.css" />
+{% endblock %}
+
+{% block content %}
+<body>
+<div style="display: flex; justify-content: flex-end; height: 30px; background: #ffeabb">
+  <a href="/class/register" class="classmain__button">튜터신청</a>
+  <button class="classmain__button">마이 클래스</button>
+</div>
+
+<div class="class__container">
+  <a class="class__row" href="/class/1">
+    <div class="classimage__container">
+      <img src="images/classimage.jpg" alt="클래스 배경사진" class="class__image">
+    </div>
+    <div class="class__info">
+      <div class="tutorimage__container">
+        <img src="images/JYP.jpg" alt="튜터 사진" class="tutor__image">
+      </div>
+      <div class="tutor__info">
+        <div class="subject">
+          탁구
+        </div>
+        <div class="name">
+          박재윤 선생님
+        </div>
+        <div class="grading">
+          평점 4.5(38)
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <div class="class__row">
+    <div class="classimage__container">
+
+    </div>
+    <div class="class__info">
+      <div class="tutorimage__container">
+
+      </div>
+      <div class="tutor__info">
+        <div class="subject">
+
+        </div>
+        <div class="name">
+
+        </div>
+        <div class="grading">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="class__container">
+  <div class="class__row">
+    <div class="classimage__container">
+
+    </div>
+    <div class="class__info">
+      <div class="tutorimage__container">
+
+      </div>
+      <div class="tutor__info">
+        <div class="subject">
+
+        </div>
+        <div class="name">
+
+        </div>
+        <div class="grading">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="class__row">
+    <div class="classimage__container">
+
+    </div>
+    <div class="class__info">
+      <div class="tutorimage__container">
+
+      </div>
+      <div class="tutor__info">
+        <div class="subject">
+
+        </div>
+        <div class="name">
+
+        </div>
+        <div class="grading">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+{% endblock %}

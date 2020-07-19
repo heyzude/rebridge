@@ -1,0 +1,94 @@
+{%  extends "layout.njk" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-profile-left">
+      <img class="profile-photo" src="../images/sample3.jpeg" alt="프로필 사진">
+    </div>
+
+    <div class="col-profile-right">
+      <h5 >사용자 닉네임</h5>
+      <span >20, 50대를 이어주고픈 아름다운 사람</span>
+    </div>
+  </div>
+
+  <div>
+    <div style="overflow:auto;">
+      <button type="button" style="float:right;">수정</button>
+    </div>
+  </div>
+
+  <div class="attraction-friend">
+    <div>
+      <div style="float:left; width:20%;">
+        <h3 >관심친구</h3>
+      </div>
+
+      <div style="float:right;width:20%; ">
+        <button>친구관리</button>
+      </div>
+
+
+    </div>
+
+    <div class="row" style="clear: both;">
+      <div class="col-profile-left">
+        <img class="friend-profile-photo" src="../images/sample2.jpeg" alt="친구 프로필 사진">
+      </div>
+      <div class="col-profile-right">
+      </div>
+    </div>
+  </div>
+
+  <div class="attraction-friend">
+    <div class="row mt-5 mb-3">
+      <div class="col-5">
+        <h4>관심친구</h4>
+      </div>
+      <div class="col-3 offset-4 pl-2">
+        <button type="button" class="btn btn-sm btn-outline-primary text-center">친구관리</button>
+      </div>
+    </div>
+
+    <div class="friends-list">
+      <div class="media mb-2">
+        <img class="mr-3 friend-profile-photo" src="images/sample2.jpg" alt="관심친구 프로필사진">
+        <div class="media-body">
+          <h5 class="mt-0">김창주</h5>
+          친한 친구
+
+        </div>
+      </div>
+
+      <div class="media mb-2">
+        <img class="mr-3 friend-profile-photo" src="images/sample2.jpg" alt="관심친구 프로필사진">
+        <div class="media-body">
+          <h5 class="mt-0">김창주</h5>
+          친한 친구
+
+        </div>
+      </div>
+
+      <div class="media mb-2">
+        <img class="mr-3 friend-profile-photo" src="images/sample2.jpg" alt="관심친구 프로필사진">
+        <div class="media-body">
+          <h5 class="mt-0">김창주</h5>
+          친한 친구
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="my-posts">
+    <div class="row mt-5">
+      <div class="col-3">
+        <span>공유게시물</span>
+      </div>
+      <div class="col-3 offset-6 pl-2">
+        <button type="button" class="btn btn-sm btn-outline-primary text-center">게시물찾기</button>
+      </div>
+    </div>
+  </div>
+{%  endblock %}

@@ -1,0 +1,164 @@
+
+
+.classpage__image {
+  height: 200px;
+  text-align: center;
+}
+
+.classpage__info {
+  display: flex;
+}
+
+.classpage__info .tutorimage__container {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  height: 130px;
+}
+
+.classpage__info .tutorimage__container .tutorimage {
+  height: 130px;
+  
+}
+
+.classpage__info .tutor__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 130px;
+}
+
+.classpage__info .tutor__info .subjecttitle {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.classpage__info .tutor__info .subtitle {
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.classpage__info .tutor__info .name {
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.classpage__info .tutor__info .grading {
+  text-align: center;
+}
+
+.classpage__info .tutor__info .classpage__button__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.classpage__button {
+  border: 0;
+  background: #ff8e0c;
+  height: 25px;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.9rem 0.1rem 0.9rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 1rem 0.3rem 0 0;
+}
+
+.classpage__menu__container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+}
+
+.classpage__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: calc(100% / 4);
+}
+
+.current__classpage__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: calc(100% / 4);
+  background: #ffeabb;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 17px;
+  padding-bottom: 15px;
+  border: 1px solid black;
+}
+
+#navbar .navbar__menu {
+  height: 19px;
+  padding: 1px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+#navbar .navbar__menu:hover {
+  color: #5dc952;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #5dc952;
+}
+
+div.classpage__contentbox {
+  padding: 5px;
+  margin: 5px;
+}
+
+a.link__button {
+  text-decoration: none;
+  color: black;
+}
+
+.form__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.classpage__info .tutor__info .subjecttitle {
+  font-weight: 200%;
+}
+
+/* .classpage__container .classpage__info {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.classpage__info .tutor__image {
+  width: 40%;
+  background: salmon;
+  text-align: center;
+}
+
+.classpage__info .tutor__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  background: skyblue;
+}
+
+.tutor__info .subject {
+  text-align: center;
+}
+
+.tutor__info .name {
+  text-align: center;
+}
+
+.tutor__info .grading {
+  text-align: center;
+}  */

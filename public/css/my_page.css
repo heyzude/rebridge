@@ -1,0 +1,14 @@
+.mypagebox {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+    background: whitesmoke;
+}
+
+.mypagecell{
+    width: 90%;
+    height: 45px;
+    background: rgb(194, 144, 51);
+}

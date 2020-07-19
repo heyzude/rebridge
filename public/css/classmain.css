@@ -1,0 +1,136 @@
+.contain__columnbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.tutorinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.box__container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contain__rowbox {
+  display: flex;
+}
+
+.infobox {
+  display: flex;
+}
+
+.columnbox__content {
+  padding: 2px;
+  /* margin-top: 2.5%; */
+  margin-bottom: 5%;
+  /* padding-left: 10px; */
+  height: 80px;
+  background: #ebebeb;
+  text-align: center;
+}
+
+.tutorinfo__content {
+  padding: 2px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  /* padding-left: 10px; */
+  background: #ebebeb;
+  text-align: left;
+}
+
+.rowbox__content {
+  padding: 2px;
+  /* padding-left: 10px; */
+  width: 40%;
+  text-align: center;
+}
+
+.infobox__content {
+  padding: 2px;
+  /* padding-left: 10px; */
+}
+
+.profilebox {
+  width: 40%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  background: lightslategray;
+  text-align: center;
+}
+
+.classmain__button {
+  border: 0;
+  background: #ff8e0c;
+  height: 20px;
+  font-size: 0.8rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0.35rem 0.3rem 0 0;
+  text-decoration: none;
+  color: black;
+  line-height: 20px;
+}
+
+.class__container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.class__row {
+  display: flex;
+  flex-direction: column;
+}
+
+.class__container .classimage__container {
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.class__container .classimage__container .class__image {
+  height: 100px;
+  width: 200px;
+}
+
+.class__container .class__info {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  border: 1px solid black;
+}
+
+.class__info .tutorimage__container {
+  width: 40%;
+  text-align: center;
+}
+
+.class__info .tutorimage__container .tutor__image {
+  height: 78px;
+}
+
+.class__info .tutor__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 60%;
+  text-decoration: none;
+  color: black;
+}
+
+.tutor__info .subject {
+  text-align: center;
+}
+
+.tutor__info .name {
+  text-align: center;
+}
+
+.tutor__info .grading {
+  text-align: center;
+}

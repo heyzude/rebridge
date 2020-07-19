@@ -1,0 +1,25 @@
+#footer {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    padding-top: 20px; 
+    border-top: 1px solid #b4b4b4;
+}
+
+#footer .flex {
+    display: flex;
+}
+
+#footer .address {
+    padding-top: 5px;
+    color: #b4b4b4; 
+    font-size: 14px;
+}
+
+#footer .footer__link {
+    padding-left: 5px; 
+    color:goldenrod; 
+    font-weight: 700; 
+    text-decoration: none;
+}

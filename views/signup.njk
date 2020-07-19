@@ -1,0 +1,164 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <form id="join-form" action="/users" method="post">
+    {% if sns %}
+      <input hidden name="sns" value={{ sns }}>
+      <input hidden name="sns_id" value={{ snsId }}>
+    {% endif %}
+    <div>
+      <div><label for="id">아이디</label></div>
+      <div>
+        <input id="id" name="login_id" type="text" autocomplete="username" autofocus required>
+        <button id="id-check" class="button" type="button">중복조회</button>
+      </div>
+      <div id="id-success-message" style="color: green"></div>
+      <div id="id-error-message" style="color: red"></div>
+    </div>
+
+    <div>
+      <div><label for="password">비밀번호</label></div>
+      <div>
+        <input id="password" name="password" type="password" autocomplete="new-password" required>
+      </div>
+    </div>
+
+    <div>
+      <div><label for="passwordcheck">비밀번호 확인</label></div>
+      <div>
+        <input id="passwordcheck" name="passwordcheck" autocomplete="new-password" type="password" required>
+      </div>
+      <div id="pass-error-message" style="color: red"></div>
+    </div>
+
+    <div>
+      <div><label for="nickname">닉네임</label></div>
+      <div>
+        <input id="nickname" name="nickname" type="text" required value={{ nick }}>
+        <button id="name-check" class="button" type="button">중복조회</button>
+      </div>
+      <div id="name-success-message" style="color: green"></div>
+      <div id="name-error-message" style="color: red"></div>
+    </div>
+
+    <div>
+      <div><label for="phonenumber">휴대폰 번호</label></div>
+      <div>
+        <input id="phonenumber" name="phonenumber" type="tel" placeholder="01012345678" required>
+        <button class="button" type="button">인증</button>
+      </div>
+    </div>
+
+    <div>
+      <div><label for="birthdate">생년월일</label></div>
+      <div>
+        <input id="birthdate" name="birthdate" type="text" placeholder="19940812" required>
+      </div>
+    </div>
+
+
+    <div>
+      <div>
+        <label>서비스 이용약관</label>
+        <input id="term" type="checkbox" required>
+        <label class="check" for="term">동의</label>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <label>개인정보 처리방침</label>
+        <input id="privacy" type="checkbox" required>
+        <label class="check" for="privacy">동의</label>
+      </div>
+    </div>
+
+    <button class="button" type="submit">가입</button>
+    <div id="join-error-message" style="color: red"></div>
+  </form>
+{% endblock %}
+
+{% block script %}
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    (function() {
+      var idChecked = false;
+      var nameChecked = false;
+      var passChecked = false;
+      document.getElementById('join-form').addEventListener('submit', function(e) {
+        document.getElementById('join-error-message').textContent = '';
+        e.preventDefault();
+        if (!idChecked) {
+          document.getElementById('join-error-message').textContent = '아이디를 확인하세요.';
+        } else if (!nameChecked) {
+          document.getElementById('join-error-message').textContent = '이름을 확인하세요.';
+        } else if (!passChecked) {
+          document.getElementById('join-error-message').textContent = '비밀번호를 확인하세요.';
+        } else {
+          this.submit();
+        }
+      });
+      document.getElementById('id').addEventListener('change', function() {
+        idChecked = false;
+      });
+      document.getElementById('nickname').addEventListener('change', function() {
+        nameChecked = false;
+      });
+      document.getElementById('password').addEventListener('input', function(e) {
+        document.getElementById('pass-error-message').textContent = '';
+        if (e.target.value !== document.getElementById('passwordcheck').value) {
+          document.getElementById('pass-error-message').textContent = '비밀번호 확인이 일치하지 않습니다.';
+        } else {
+          document.getElementById('pass-error-message').textContent = '';
+          passChecked = true;
+        }
+      });
+      document.getElementById('passwordcheck').addEventListener('input', function(e) {
+        document.getElementById('pass-error-message').textContent = '';
+        if (e.target.value !== document.getElementById('password').value) {
+          document.getElementById('pass-error-message').textContent = '비밀번호 확인이 일치하지 않습니다.';
+        } else {
+          document.getElementById('pass-error-message').textContent = '';
+          passChecked = true;
+        }
+      });
+      document.querySelector('#id-check').addEventListener('click', function() {
+        if (!document.getElementById('id').value) {
+          return;
+        }
+        axios.get('/users/name/' + document.getElementById('id').value).then(function(result) {
+          document.getElementById('id-error-message').textContent = '';
+          document.getElementById('id-success-message').textContent = '';
+          if (result.data.msg) {
+            idChecked = true;
+            document.getElementById('id-success-message').textContent = '사용해도 좋습니다.';
+          } else {
+            idChecked = false;
+            document.getElementById('id-error-message').textContent = '이미 사용중인 아이디입니다.';
+          }
+        }).catch(function () {
+          document.getElementById('id-error-message').textContent = '서버 에러. 잠시 후 다시 시도하세요.';
+        })
+      });
+      document.querySelector('#name-check').addEventListener('click', function() {
+        if (!document.getElementById('nickname').value) {
+          return;
+        }
+        axios.get('/users/name/' + document.getElementById('nickname').value).then(function(result) {
+          document.getElementById('name-error-message').textContent = '';
+          document.getElementById('name-success-message').textContent = '';
+          if (result.data.msg) {
+            nameChecked = true;
+            document.getElementById('name-success-message').textContent = '사용해도 좋습니다.';
+          } else {
+            nameChecked = false;
+            document.getElementById('name-error-message').textContent = '이미 사용중인 이름입니다.';
+          }
+        }).catch(function () {
+          document.getElementById('name-error-message').textContent = '서버 에러. 잠시 후 다시 시도하세요.';
+        })
+      });
+    })()
+  </script>
+
+{% endblock %}

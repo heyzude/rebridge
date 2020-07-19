@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <div class="login-container">
+    <form id="login-form" method="post" action="/users/signin">
+      <div class="input-box">
+        <div class="i-wrap"><i class="fas fa-user-circle"></i></div>
+        <input id="id" name="login_id" type="text" autocomplete="username" autofocus required placeholder="아이디">
+      </div>
+
+      <div class="input-box">
+        <div class="i-wrap"><i class="fas fa-lock"></i></div>
+        <input id="password" name="password" type="password" autocomplete="current-password" required
+               placeholder="비밀번호">
+      </div>
+
+      <div class="buttonbox">
+        <button class="button_login">로그인</button>
+        <button class="button_login">아이디, 비밀번호 찾기</button>
+      </div>
+      <div id="check-wrap">
+        <div class="check">
+        <span>
+          <input id="keep" type="checkbox">
+          <label for="keep">로그인 상태 유지</label>
+        </span>
+        </div>
+
+        <div class="check">
+        <span>
+          <input id="save" type="checkbox">
+          <label for="save">아이디 저장</label>
+        </span>
+        </div>
+      </div>
+      {% if loginError %}
+        <div id="login-error-message" style="color: red">{{ loginError }}</div>
+      {% endif %}
+    </form>
+    <div id="button-wrap">
+      <a href="/users/naver">
+        <button class="signupbutton">네이버 계정으로 회원가입</button>
+      </a>
+      <a href="/users/kakao">
+        <button class="signupbutton">카카오 계정으로 회원가입</button>
+      </a>
+      <a href="/signup">
+        <button class="signupbutton">회원가입</button>
+      </a>
+
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <header id="header">
+    <div class="container">
+      <div class="header__column" style="width: 20%;">
+        <a href="#" class="header__link">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <div class="header__column" style="width: 60%;">
+        서로의 생각이 궁금해
+      </div>
+      <div class="header__column" style="width: 20%;">
+        <a href="#" class="header__link">
+          <i class="fas fa-edit"></i>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="header__row">
+      <div class="header__column2">
+        <a href="#" class="header__link">
+          취소
+        </a>
+      </div>
+      <div class="header__column2">
+        글쓰기 </div>
+      <div class="header__column2">
+        <a href="#" class="header__link">
+          완료
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="box">
+      <select name="type" class="type">
+        <option value="">게시물 유형 선택</option>
+        <option value="가족관계">가족관계</option>
+        <option value="세대 간 갈등">세대 간 갈등</option>
+        <option value="일상 고민">일상 고민</option>
+        <option value="기타">기타</option>
+        <option value="직접입력">직접입력</option>
+      </select>
+
+      <select name="age">
+        <option value="">연령대 선택</option>
+        <option value="10대">10대</option>
+        <option value="20대">20대</option>
+        <option value="30대">30대</option>
+        <option value="40대">40대</option>
+        <option value="50대">50대</option>
+        <option value="60대 이상">60대 이상</option>
+      </select>
+    </div>
+    <textarea placeholder="여기를 눌러 내용을 입력하세요"></textarea>
+  </main>
+
+  <div class="div__row" style="justify-content: space-around;">
+    <a href="#" class="write__link">
+      <i class="fas fa-image"></i>
+      사진
+    </a>
+    <a href="#" class="write__link">
+      <i class="fas fa-video"></i>
+      동영상
+    </a>
+    <a href="#" class="write__link">
+      <i class="fas fa-share-alt-square"></i>
+      링크 공유
+    </a>
+  </div>
+{% endblock %}

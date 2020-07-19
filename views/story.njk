@@ -1,0 +1,131 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div style="display: flex; justify-content: flex-end; height: 30px; background: #ffeabb">
+  <a href="/storywrite"><button class="write">글쓰기</button></a>
+</div>
+
+<!-- 첫번째 게시글 -->
+
+<div class="postinfo">
+  <div class="postinfo__column__20">
+    <div class="profilepic"></div>
+  </div>
+  <div class="postinfo__column__50">
+    <div class="poster__nickname">
+      줴이와이퓌
+    </div>
+    <div class="upload__date">
+      2018.08.31 07:35
+    </div>
+  </div>
+  <div class="postinfo__column__30">
+    <div class="howmany__hits">조회수 8회</div>
+    <div class="contain__bamboobutton">
+      <button class="bamboo__button">수정</button>
+      <button class="bamboo__button">삭제</button>
+    </div>
+  </div>
+</div>
+
+<div class="content__box">
+  여러분 저는 오늘 미국으로 떠납니다...ㅠ <br>
+  같이 일하다 혼자만 멀리로 가버리는것같아 우리 팀원들한테 너무 미안하네ㅠㅠ<br>
+  다들 열심히 노력해주고 있는 만큼 나도 미국가서도 리브릿지의 발전을 위해 최선을 다해 노력할게용!!
+</div>
+
+<div class="response">
+  <div class="response__box">
+    <i class="far fa-thumbs-up"></i>
+    <div>좋아요 5개</div>
+  </div>
+  <div class="response__box">
+    <i class="far fa-comment-alt"></i>
+    <div>댓글 1개</div>
+  </div>
+  <div class="response__box">
+    <i class="far fa-share-square"></i>
+    <div>공유 1회</div>
+  </div>
+</div>
+
+<div class="contain__reply">
+  <div class="reply__profilepic"></div>
+  <div class="reply__content">
+    <div class="reply__nickname">
+      이해쥬
+    </div>
+    <div class="reply__comment">
+      꼽창 선임 재윤아 잘가~
+    </div>
+  </div>
+</div>
+
+<!-- 두번째 게시글 -->
+
+<div class="postinfo">
+  <div class="postinfo__column__20">
+    <div class="profilepic"></div>
+  </div>
+  <div class="postinfo__column__50">
+    <div class="poster__nickname">
+      김혜쪙
+    </div>
+    <div class="upload__date">
+      2018.09.02 14:30
+    </div>
+  </div>
+  <div class="postinfo__column__30">
+    <div class="howmany__hits">조회수 6회</div>
+    <div class="contain__bamboobutton">
+      <button class="bamboo__report"> &#x1F6A8;
+        신고</button>
+    </div>
+  </div>
+</div>
+
+<div class="content__box">
+  오늘도 엔젤입니당!!
+</div>
+
+<div class="response">
+  <div class="response__box">
+    <i class="far fa-thumbs-up"></i>
+    <div>좋아요 2개</div>
+  </div>
+  <div class="response__box">
+    <i class="far fa-comment-alt"></i>
+    <div>댓글 2개</div>
+  </div>
+  <div class="response__box">
+    <i class="far fa-share-square"></i>
+    <div>공유 1회</div>
+  </div>
+</div>
+
+<div class="contain__reply">
+  <div class="reply__profilepic"></div>
+  <div class="reply__content">
+    <div class="reply__nickname">
+      갓현영ZeroCho
+    </div>
+    <div class="reply__comment">
+      저는 오늘 안 될것같아요 ㅠㅠ
+      <br>내일 첫 출근이라 준비할게 많아서요...
+      <br>개발 궁금하신 거 있으면 카톡으로 질문주세요
+    </div>
+  </div>
+</div>
+
+<div class="contain__reply">
+  <div class="reply__profilepic"></div>
+  <div class="reply__content">
+    <div class="reply__nickname">
+      찡준이
+    </div>
+    <div class="reply__comment">
+      넵!! 저 오늘 질문할게 좀 잇엇는데 오늘 한두시간 더 해보고 안되는거 정리해서 여쭤볼게여
+    </div>
+  </div>
+</div>
+{% endblock %}

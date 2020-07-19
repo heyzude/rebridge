@@ -1,0 +1,31 @@
+#news__container {
+    height: 600px; 
+    background: #ffeabb; 
+    padding: 30px 0;
+}
+
+.news__column {
+    display: flex; 
+    justify-content: center; 
+    width: 90%;
+    margin-left: 5%; 
+}
+
+.news__column .cell {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 1%;
+    border-radius: 10px;
+
+    border: 1px solid black;
+    background: white;
+    font-size: 1rem;
+    width: calc(100% / 3);
+    height: 120px;
+}
+
+.news__column .cell a {
+    color: black;
+    text-decoration: none;
+}

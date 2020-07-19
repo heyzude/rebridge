@@ -1,0 +1,17 @@
+
+    .startbutton {
+        margin: 15px 0 0 0;
+        background: #fafafa;
+        text-align: center;
+        width: 80%;
+        height: 75px;
+        border: 1px solid orange;
+        font-size: 1rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+
+    .space {
+        display: block;
+        background: #fac53b;
+        height: 10px;
+    }

@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  {% if user %}
+    <div>{{ user.name }}님 안녕하세요.</div>
+    <a href="/users/signout">로그아웃</a>
+  {% else %}
+    <a href="/signin">로그인</a>
+    <a href="/signup">회원가입</a>
+  {% endif %}
+{% endblock %}
